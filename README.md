@@ -4,10 +4,9 @@ Tablero móvil hecho en **Flutter** que consume **5 APIs gratuitas** aplicando *
 
 > Desarrollo Móvil Integral · UTNG
 > Profesor: Anastacio Rodríguez García
-> Alumno: _Ramirez Lopez Maria Yazmin_
+> Alumno: _Ramires Lopez Maria Yazmin_
 
 ## ¿Qué hace?
-
 
 Muestra en una sola pantalla información de Dolores Hidalgo, Guanajuato:
 
@@ -40,7 +39,7 @@ lib/
 test/             ayudas.dart + 4 archivos de pruebas
 ```
 
-
+![Estructura del proyecto](capturas/06_estructura.png)
 
 - **ClienteSeguro**: única puerta de salida a internet para las 5 APIs.
 - **Un servicio por API**: `ServicioClima`, `ServicioCambio`, `ServicioFestivos`, `ServicioWikipedia`, `ServicioNasa`.
@@ -57,7 +56,7 @@ test/             ayudas.dart + 4 archivos de pruebas
 - `ConfigClaves.toString()` y `ClienteSeguro.redactar()` evitan filtrar claves en logs.
 - Errores inesperados muestran un mensaje genérico al usuario.
 
-
+![git status sin secrets.json](capturas/05_git_status.png)
 
 ## Cómo ejecutarlo
 
@@ -85,9 +84,11 @@ Las pruebas no usan internet: simulan las respuestas con `MockClient`.
 flutter test
 ```
 
-
+![Pruebas pasando](capturas/01_pruebas.png)
 
 ## Notas
 
 - Si una API cambia su formato, la tarjeta correspondiente muestra "El servidor respondió con datos que no entiendo" y hay que actualizar el modelo y su prueba.
 - La clave que va dentro de la app no es realmente secreta; para claves de pago se recomienda un servidor proxy.
+
+
