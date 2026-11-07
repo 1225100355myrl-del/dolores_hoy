@@ -91,6 +91,3 @@ flutter test
 - Si una API cambia su formato, la tarjeta correspondiente muestra "El servidor respondió con datos que no entiendo" y hay que actualizar el modelo y su prueba.
 - La clave que va dentro de la app no es realmente secreta; para claves de pago se recomienda un servidor proxy.
 
-
-
-
